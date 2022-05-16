@@ -9,7 +9,7 @@ The model is consists of a modular toolkit (in python) and an extremelt simple J
 `git clone https://gitlab.com/benloveday/oc_forward_model.git` \
 `cd oc_forward_model` \
 `conda env create -f environment.yml` \
-`conda activate oc_forward` <br>
-`jupyter-notebook` <br>
+`conda activate oc_forward` \
+`jupyter-notebook` \
 
 Once the notebook server is running, you should run the `Run_model.ipynb` notebook
