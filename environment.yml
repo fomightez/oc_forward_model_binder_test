@@ -1,0 +1,10 @@
+name: oc_forward
+dependencies:
+  - python=3.9
+  - notebook
+  - matplotlib
+  - numpy
+  - glob2
+  - pathlib
+  - ipympl
+
