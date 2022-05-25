@@ -13,3 +13,10 @@ The model is consists of a modular toolkit (in python) and an extremelt simple J
 `jupyter-notebook` \
 
 Once the notebook server is running, you should run the `Run_model.ipynb` notebook
+
+## To do
+
+* Add Bernard at al. effective diamater and dual algal populations
+* homogenise Ruddick and Bernard LUTs...possible or dual model?
+* Add OLCI, MSI, FCI "extractions" at specified wavelengths and with relevant SRFs
+* "idealised" atmosphere addition? Sreerekha RT-TOV?
