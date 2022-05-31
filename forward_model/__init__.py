@@ -9,3 +9,4 @@ from .forward_model import ForwardModel
 from .read_samples import * 
 from .read_params import *
 from .components import *
+from .sensors import *

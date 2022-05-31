@@ -10,7 +10,23 @@ def build_widgets(self):
             min=-3, 
             max=3, 
             step=0.001,
-            description='chl'
+            description='Chlorophyll'
+        )
+
+        eff_slider = widgets.FloatSlider(
+            value=self.conditions["eff_default"], 
+            min=1, 
+            max=20, 
+            step=1,
+            description='Eff. diam [μm]'
+        )
+
+        ddf_slider = widgets.FloatSlider(
+            value=self.conditions["ddf_default"], 
+            min=0, 
+            max=1, 
+            step=0.01,
+            description='DD fraction'
         )
 
         nap_slider = widgets.FloatLogSlider(
@@ -18,7 +34,7 @@ def build_widgets(self):
             min=-3, 
             max=3, 
             step=0.001,
-            description='nap'
+            description='Non-algal'
         )
 
         cdom_slider = widgets.FloatLogSlider(
@@ -26,9 +42,9 @@ def build_widgets(self):
             min=-3, 
             max=3, 
             step=0.001,
-            description='cdom'
+            description='CDOM'
         )
- 
+
         # define sample widgets
         rrs_samples = widgets.Checkbox(
             value=False,
@@ -59,13 +75,48 @@ def build_widgets(self):
             indent=False
         )
 
-        # define sample widgets
-        options_two_species = widgets.Checkbox(
+        options_EAP = widgets.Checkbox(
             value=False,
-            description='Use two species model',
+            description='Use EAP model',
             disabled=False,
             indent=False
         )
 
-        return chl_slider, nap_slider, cdom_slider, rrs_samples,\
-               user_samples, saved_samples, options_fQ, options_two_species
+        # define sensor widgets
+        options_show_OLCI_A = widgets.Checkbox(
+            value=False,
+            description='Show S3 OLCI-A L2 sampling',
+            disabled=False,
+            indent=False
+        )
+
+        options_show_OLCI_B = widgets.Checkbox(
+            value=False,
+            description='Show S3 OLCI-B L2 sampling',
+            disabled=False,
+            indent=False
+        )
+
+        options_show_MSI_A = widgets.Checkbox(
+            value=False,
+            description='Show S2 MSI-A L2 sampling',
+            disabled=False,
+            indent=False
+        )
+
+        options_show_MSI_B = widgets.Checkbox(
+            value=False,
+            description='Show S2 MSI-B L2 sampling',
+            disabled=False,
+            indent=False
+        )
+
+        options_show_OLI = widgets.Checkbox(
+            value=False,
+            description='Show L8 OLI L2 sampling',
+            disabled=False,
+            indent=False
+        )
+        return chl_slider, eff_slider, ddf_slider, nap_slider, cdom_slider, rrs_samples,\
+               user_samples, saved_samples, options_fQ, options_EAP, options_show_OLCI_A,\
+               options_show_OLCI_B, options_show_MSI_A, options_show_MSI_B, options_show_OLI

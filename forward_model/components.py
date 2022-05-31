@@ -18,22 +18,32 @@ def calc_bbp_ph_nu(chl):
 
     return bbp_ph_nu
 
-def calc_components(wavs, params, abs_water, abs_increment, scattering_coefficient, chl, nap, cdom):
+def calc_components(wavs, params, abs_water, abs_increment, scattering_coefficient, chl, nap, cdom, EAP=False):
 
     # pre calculations
     offset_wavs = wavs - 443
-    aphy = calc_aphy(abs_increment, scattering_coefficient, chl)
-    bbp_ph_nu = calc_bbp_ph_nu(chl)
 
     # absorption calculations
-    aph = aphy * chl
+    if EAP:
+        aphy = calc_aphy(abs_increment, scattering_coefficient, chl)
+        aph = aphy * chl
+    else:
+        aphy = calc_aphy(abs_increment, scattering_coefficient, chl)
+        aph = aphy * chl
+
     aNAP = nap * float(params["IOP_model"]["aNAP_star_443"]) * np.exp(-1 * float(params["IOP_model"]["SNAP"]) * offset_wavs)
     aCDOM = cdom * np.exp(-1 * float(params["IOP_model"]["SCDOM"]) * offset_wavs)
     total_absorption = abs_water + aph + aNAP + aCDOM
 
     # backscattering calculations
+    if EAP:
+        bbp_ph_nu = calc_bbp_ph_nu(chl)
+        bbph = (0.002 + 0.01 * np.max([0.0, 0.5 - 0.25 * np.log10(chl)]) * (wavs / 550.0) ** bbp_ph_nu) * 0.416 * chl ** 0.766
+    else:
+        bbp_ph_nu = calc_bbp_ph_nu(chl)
+        bbph = (0.002 + 0.01 * np.max([0.0, 0.5 - 0.25 * np.log10(chl)]) * (wavs / 550.0) ** bbp_ph_nu) * 0.416 * chl ** 0.766
+
     bbw = float(params["IOPs_pure_water"]["bbw_bw"]) * float(params["IOPs_pure_water"]["bw500"]) * (wavs / 500.0) ** float(params["IOPs_pure_water"]["nw"])
-    bbph = (0.002 + 0.01 * np.max([0.0, 0.5 - 0.25 * np.log10(chl)]) * (wavs / 550.0) ** bbp_ph_nu) * 0.416 * chl ** 0.766
     bbpNAP = float(params["IOP_model"]["bbp_star_555"]) * nap * (wavs / 555.0) ** float(params["IOP_model"]["np"])
     total_backscatter = bbw + bbph + bbpNAP
 

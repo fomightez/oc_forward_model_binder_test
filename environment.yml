@@ -7,4 +7,5 @@ dependencies:
   - glob2
   - pathlib
   - ipympl
+  - scipy
 

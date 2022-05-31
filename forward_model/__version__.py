@@ -2,7 +2,7 @@
 __title__ = "OCforward"
 __description__ = "Ocean Colour forward model"
 __url__ = "tbd"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Eumetsat, RBINS"
 __author_email__ = "ops@eumetsat.int"
 __license__ = "MIT"
