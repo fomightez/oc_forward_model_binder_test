@@ -64,9 +64,9 @@ If you prefer to use the Anaconda Navigator GUI, you can import the environment 
 
 If you are working from the terminal you can use the following command to launch Jupyter Notebook
 
-`jupyter notebook` or `jupyter-notebook`, depending on your operating system.
+`jupyter notebook` or `jupyter-notebook` (depending on your operating system)
 
-This should open Jupyter Notebooks in a browser window. On occasion, Jupyter may not
+This should open Jupyter Notebook in a browser window. On occasion, Jupyter may not
 be able to open a window and will give you a URL to past in your browser. Please do
 so, if required.
 
@@ -78,7 +78,7 @@ If you are using the Anaconda Navigator you can click the Jupyter Notebook "laun
 
 You can then browse you file system in the Jupyter Notebook window to find the `Run_model.ipynb` notebook.
 
-## Outstanding work
+## Outstanding work (for development records only)
 
 * Add Bernard at al. effective diamater and dual algal populations
 * homogenise Ruddick and Bernard LUTs...possible or dual model?
