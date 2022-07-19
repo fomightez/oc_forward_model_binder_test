@@ -7,18 +7,18 @@ def build_widgets(self):
         # define slider widgets
         chl_slider = widgets.FloatLogSlider(
             value=self.conditions["chl_default"], 
-            min=-3, 
+            min=-2, 
             max=3, 
             step=0.001,
-            description='chl'
+            description='Chl'
         )
 
         nap_slider = widgets.FloatLogSlider(
             value=self.conditions["nap_default"], 
-            min=-3, 
+            min=-2, 
             max=3, 
             step=0.001,
-            description='nap'
+            description='NAP'
         )
 
         cdom_slider = widgets.FloatLogSlider(
@@ -26,7 +26,7 @@ def build_widgets(self):
             min=-3, 
             max=3, 
             step=0.001,
-            description='cdom'
+            description='CDOM$_{443}$'
         )
  
         # define sample widgets
@@ -37,6 +37,7 @@ def build_widgets(self):
             indent=False
         )
 
+        # define user sample widgets
         user_samples = widgets.Checkbox(
             value=False,
             description='Show user $R_{rs}$ spectra',
@@ -44,13 +45,23 @@ def build_widgets(self):
             indent=False
         )
 
+        # define saved sample widgets
         saved_samples = widgets.Checkbox(
             value=False,
-            description='Show saved $R_{rs}$ spectra << WIP',
+            description='Show saved $R_{rs}$ spectra',
             disabled=False,
             indent=False
         )
- 
+
+        # define saved spectra button
+        save_spectra_button = widgets.Button(
+            description='Save spectra',
+            disabled=False,
+            button_style='',
+            tooltip='Click me; saves to Saved_spectra.txt',
+            icon=''
+        )
+
         # define options widgets
         options_fQ = widgets.Checkbox(
             value=False,
@@ -68,4 +79,4 @@ def build_widgets(self):
         )
 
         return chl_slider, nap_slider, cdom_slider, rrs_samples,\
-               user_samples, saved_samples, options_fQ, options_two_species
+               user_samples, saved_samples, save_spectra_button, options_fQ, options_two_species
