@@ -10,8 +10,7 @@ The model is consists of a modular toolkit (written in Python) and a simple Jupy
  
 This code is licensed under an MIT license. See file LICENSE.txt for details on 
 the usage and distribution terms. No dependencies are distributed as part of this 
-package. Copyright RBINS/EUMETSAT 2022. The colours.py module is based on the work
-of 
+package. Copyright RBINS/EUMETSAT 2022.
 
 All product names, logos, and brands are property of their respective owners. 
 All company, product and service names used in this website are for identification 
