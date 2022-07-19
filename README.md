@@ -25,7 +25,7 @@ purposes only.
 
 ### Additional authors
 
-* [**Christian Hill**] - development of the colours.py module. Please see module for more information.
+* **Christian Hill** - development of the colours.py module. Please see module for more information.
 
 ## Prerequisites
 
