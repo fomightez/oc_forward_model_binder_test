@@ -4,7 +4,7 @@ Changes in the concentration of chlorophyll (Chl), coloured dissolved organic ma
 
 In this module we provide a Python based forward model based on three consituents; Chl, CDOM (measured at 443 nm) and NAP. By varying these quantities we are able to see the resulting changes in the absorption (*a*), backscattering (*b*) and remote sensing reflectance (*R$_{rs}$*) spectra observed at the ocean surface. 
 
-The model is consists of a modular toolkit (in python) and a simple Jupyter Notebook front-end implementation which allows it to be run "live" via a dashboard of widgets. We recommend installing the package using the Anaconda package manager. Step-by-step installation instructions are included below.
+The model is consists of a modular toolkit (written in Python) and a simple Jupyter Notebook front-end implementation which allows it to be run "live" via a dashboard of widgets. We recommend installing the package using the Anaconda package manager. Step-by-step installation instructions are included below.
 
 ## License
  
