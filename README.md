@@ -47,7 +47,7 @@ This will make a local copy of all the relevant files.
 
 You can usually find your terminal in the start menu of most Linux distributions 
 and in the Applications/Utilities folder  on OSx. Alternatively, you should be 
-able to find/open your Anaconda prompt from your start menu (or dock, or via running 
+able to find/open your Anaconda Powershell prompt from your start menu (or dock, or via running 
 the Anaconda Navigator). Once you have opened a terminal/prompt, you should navigate 
 to the directory where you want to put the code. Once you are in the correct directory, 
 you should run the following command;
@@ -65,7 +65,7 @@ If you are comfortable with the command line (terminal or Anaconda Prompt) you c
 
 This will create the necessary python environment, load it and launch jupyter notebook.
 
-If you prefer to use the Anaconda Navigator GUI, you can import the environment by accessing the `Environment` tab on the left hand side of the Navigator home screen, and the use the `import` button to browse to the downloaded environment.yml file. This will create a new environment called 'oc_forward_model' in the drop down list. You should select this environment.
+If you prefer to use the Anaconda Navigator GUI, you can import the environment by accessing the `Environment` tab on the left hand side of the Navigator home screen, and the use the `import` button to browse to the downloaded environment.yml file. This will create a new environment called 'oc_forward_model' in the drop down list. You should select this environment. *Note: you may need to re-select this each time you open the Anaconda Navigator*
 
 3. **Running Jupyter Notebook and the code itself**
 
