@@ -84,9 +84,12 @@ If you are using the Anaconda Navigator you can click the Jupyter Notebook "laun
 
 You can then browse you file system in the Jupyter Notebook window to find the `Run_model.ipynb` notebook.
 
-## Outstanding work (for development records only)
+## Potential development work
 
-* Add Bernard at al. effective diamater and dual algal populations
-* homogenise Ruddick and Bernard LUTs...possible or dual model?
+There are no guarantees the following will occur, but I/we remain open to suggestions and collaborations. Please raise an issue on this repository if you want to comment on code improvements/expansion.
+
+* Add Bernard at al. effective diamater and dual algal population models.
+* Homogenise Ruddick and Bernard LUTs...possible or dual model?
 * Add OLCI, MSI, FCI "extractions" at specified wavelengths and with relevant SRFs
-* "idealised" atmosphere addition? Sreerekha RT-TOV?
+* Add "idealised" atmosphere addition? RT-TOV is a possibility.
+* Add BRDF dependance function for anistropy.
