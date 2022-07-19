@@ -83,9 +83,9 @@ from the correct directory!*
 If you are using the Anaconda Navigator you can click the Jupyter Notebook "launch" button and then navigate to where you installed the code.
 
 You can then browse you file system in the Jupyter Notebook window to find the `Run_model.ipynb` notebook.
-
+<hr>
 ## Potential development work
-
+<hr>
 There are no guarantees the following will occur, but I/we remain open to suggestions and collaborations. Please raise an issue on this repository if you want to comment on code improvements/expansion.
 
 * Add Bernard at al. effective diamater and dual algal population models.
