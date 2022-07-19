@@ -1,8 +1,10 @@
 # Ocean Colour Forward Model
 
-Translation of excel based ocean colour forward modelling approaches from Ruddick and Bernard into a consolidated python-based module
+Changes in the concentration of chlorophyll (Chl), coloured dissolved organic matter (CDOM) and non-algae particles (NAP, e.g. sediment) in water have a marked effect on its colour. These changes are measurable by us, as observers, and by ocean colour satellites. When we know the concentrations of these consituents, **forward modelling** allows us to simulate the spectrally dependant absorption and scattering signals of the water, and in turn determine its reflectance, the inherent optical property we typically measure from space and with *in situ* radiometry instruments.
 
-The model is consists of a modular toolkit (in python) and a simple Jupyter Notebook front-end implementation. We recommend installing the package using the Anaconda package manager. Step-by-step installation instructions are included below.
+In this module we provide a Python based forward model based on three consituents; Chl, CDOM (measured at 443 nm) and NAP. By varying these quantities we are able to see the resulting changes in the absorption (*a*), backscattering (*b*) and remote sensing reflectance (*R$_{rs}$*) spectra observed at the ocean surface. 
+
+The model is consists of a modular toolkit (in python) and a simple Jupyter Notebook front-end implementation which allows it to be run "live" via a dashboard of widgets. We recommend installing the package using the Anaconda package manager. Step-by-step installation instructions are included below.
 
 ## License
  
