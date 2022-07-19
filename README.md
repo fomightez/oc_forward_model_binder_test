@@ -2,13 +2,14 @@
 
 Translation of excel based ocean colour forward modelling approaches from Ruddick and Bernard into a consolidated python-based module
 
-The model is consists of a modular toolkit (in python) and a simple Jupyter Notebook front-end implementation. We recommend installting the package using the Anaconda package manager. Step-by-step installation instructions are included below.
+The model is consists of a modular toolkit (in python) and a simple Jupyter Notebook front-end implementation. We recommend installing the package using the Anaconda package manager. Step-by-step installation instructions are included below.
 
 ## License
  
 This code is licensed under an MIT license. See file LICENSE.txt for details on 
 the usage and distribution terms. No dependencies are distributed as part of this 
-package. Copyright RBINS/EUMETSAT 2022.
+package. Copyright RBINS/EUMETSAT 2022. The colours.py module is based on the work
+of 
 
 All product names, logos, and brands are property of their respective owners. 
 All company, product and service names used in this website are for identification 
@@ -19,6 +20,10 @@ purposes only.
 * [**Kevin Ruddick**](mailto://kruddick@naturalsciences.be) - [RBINS](https://www.naturalsciences.be/)
 * [**Ben Loveday**](mailto://ops@eumetsat.int) - [EUMETSAT](http://www.eumetsat.int)
 * [**Hayley Evers-King**](mailto://ops@eumetsat.int) - [EUMETSAT](http://www.eumetsat.int)
+
+### Additional authors
+
+* [**Christian Hill**] - development of the colours.py module. Please see module for more information.
 
 ## Prerequisites
 
@@ -45,7 +50,7 @@ the Anaconda Navigator). Once you have opened a terminal/prompt, you should navi
 to the directory where you want to put the code. Once you are in the correct directory, 
 you should run the following command;
 
-Alternatively, you can download the package using the download icon (down arrow) on the top right of this page. *Note, we highly recommend you put this small package somewhere east to find on your file manage, e.g. the Desktop, or Anaconda may not be able to find it*
+Alternatively, you can download the package using the download icon (down arrow) on the top right of this page. *Note, we highly recommend you put this small package somewhere easy to find on your file manage, e.g. the Desktop, or Anaconda may not be able to find it*
 
 2. **Setting up the code environment**
 
