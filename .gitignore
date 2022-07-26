@@ -34,3 +34,4 @@ wheels/
 
 # tmp files
 Saved_spectra.txt
+forward_model/Rrs_samples/Rrs_user_last.txt

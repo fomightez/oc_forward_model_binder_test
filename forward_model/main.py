@@ -140,10 +140,11 @@ class ForwardModel(widgets.HBox):
 
         self.conditions["saved_samples"] = components["rrs"]
         
-        with open("Saved_spectra.txt", "w") as saved_spectra_file:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+          "Rrs_samples", "Rrs_user_last.txt"),"w") as saved_spectra_file:
             saved_spectra_file.write(f"# Wavelength (nm), Rrs\n")
             for wavelength, rrs in zip(self.conditions["wavelengths"], components["rrs"]):
-                saved_spectra_file.write(f"{str(wavelength)}, {str(rrs)}\n")
+                saved_spectra_file.write(f"{str(int(wavelength))},{str(rrs)}\n")
         
     def update_model(self, change):
         """Draw line in plot"""
@@ -192,14 +193,30 @@ class ForwardModel(widgets.HBox):
                 item.set_ydata(None)
 
     def show_user_plots(self, change):
-
         if change.new:
             self.user_samples = [None] * np.shape(self.conditions["user_samples"])[0]
             for ii in range(np.shape(self.conditions["user_samples"])[0]):
+                if "L8" in self.conditions["user_files"][ii]:
+                    plot_col = "r"
+                    marker= "^"
+                    markersize=10
+                elif "S2" in self.conditions["user_files"][ii]:
+                    plot_col = "b"
+                    marker= "s"
+                    markersize=10
+                elif "last" in self.conditions["user_files"][ii]:
+                    plot_col = "0.5"
+                    marker= "."
+                    markersize=1
+                else:
+                    plot_col = "m"
+                    marker= "o"
+                    markersize=10
+
                 self.user_samples[ii] = self.ax_rrs.scatter(
                     self.conditions["user_samples"][ii,:,0],
                     self.conditions["user_samples"][ii,:,1],
-                    color='r')
+                    s=markersize, color=plot_col, marker=marker)
         else:
             for item in self.user_samples:
                 item.set_visible(False)
