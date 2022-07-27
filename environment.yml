@@ -1,9 +1,12 @@
 name: oc_forward_model
+channels:
+  - anaconda
 dependencies:
-  - python=3.9
-  - notebook=6.4.11
-  - matplotlib
-  - numpy
-  - glob2
-  - pathlib
-  - ipympl
+  - anaconda::python==3.9.12
+  - anaconda::notebook==6.4.11
+  - anaconda::ipywidgets==7.6.5
+  - anaconda::matplotlib
+  - anaconda::numpy
+  - anaconda::glob2
+  - anaconda::pathlib
+  - anaconda::ipympl
