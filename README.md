@@ -1,6 +1,6 @@
 # Ocean Colour Forward Model
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.com%2Fbenloveday%2Foc_forward_model%2F/HEAD?urlpath=%2Ftree%2FRun_model.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fomightez/oc_forward_model_binder_test/HEAD?urlpath=%2Ftree%2FRun_model.ipynb)
 
 Changes in the concentration of chlorophyll (Chl), coloured dissolved organic matter (CDOM) and non-algae particles (NAP, e.g. sediment) in water have a marked effect on its colour. These changes are measurable by us, as observers, and by ocean colour satellites. When we know the concentrations of these consituents, **forward modelling** allows us to simulate the spectrally dependant inherent optical properties of the consituents (primarily absorption and scattering), and in turn determine the reflectance, the apparent optical property we typically measure from space and with in situ radiometry instruments.
 
