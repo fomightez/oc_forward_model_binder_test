@@ -1,0 +1,10 @@
+name: oc-environment
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.12
+  - matplotlib
+  - numpy
+  - ipywidgets
+  - ipympl
+  - glob2
