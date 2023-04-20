@@ -1,5 +1,7 @@
 # Ocean Colour Forward Model
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.com%2Fbenloveday%2Foc_forward_model%2F/HEAD?urlpath=%2Ftree%2FRun_model.ipynb)
+
 Changes in the concentration of chlorophyll (Chl), coloured dissolved organic matter (CDOM) and non-algae particles (NAP, e.g. sediment) in water have a marked effect on its colour. These changes are measurable by us, as observers, and by ocean colour satellites. When we know the concentrations of these consituents, **forward modelling** allows us to simulate the spectrally dependant inherent optical properties of the consituents (primarily absorption and scattering), and in turn determine the reflectance, the apparent optical property we typically measure from space and with in situ radiometry instruments.
 
 In this module we provide a Python based forward model based on three consituents; Chl, CDOM (measured at 443 nm) and NAP. By varying these quantities we are able to see the resulting changes in the absorption (*a*), backscattering (*b*) and remote sensing reflectance (*Rrs*) spectra observed at the ocean surface. This can give an understanding of how the ocean colour signal can vary, how sensitive it is to changes in different constituents, and how it might be exploited through multi and hyperspectral satellite measurements and geophysical retrieval algorithms.
